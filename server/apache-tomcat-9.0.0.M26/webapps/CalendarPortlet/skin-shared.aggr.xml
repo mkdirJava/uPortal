@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources xmlns="http://www.jasig.org/uportal/web/skin">
+    <css included="aggregated" resource="true">/rs/bootstrap-namespaced/3.1.1/css/bootstrap.min.css</css>
+    <css included="aggregated" resource="true">/rs/fontawesome/4.0.3/css/font-awesome.min.css</css>
+    <css compressed="true">css/or7Savmgq4t0CdzneDmBTA.aggr.min.css</css>
+    <js included="aggregated" resource="true">/rs/backbone/0.9.2/backbone-0.9.2.min.js</js>
+    <js compressed="true">scripts/4fRzt6rcQpkBx56L5bI3Mw.aggr.min.js</js>
+</resources>

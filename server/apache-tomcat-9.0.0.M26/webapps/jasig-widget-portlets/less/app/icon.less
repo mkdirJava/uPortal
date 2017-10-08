@@ -1,0 +1,94 @@
+/**
+  * Licensed to Jasig under one or more contributor license
+  * agreements. See the NOTICE file distributed with this work
+  * for additional information regarding copyright ownership.
+  * Jasig licenses this file to you under the Apache License,
+  * Version 2.0 (the "License"); you may not use this file
+  * except in compliance with the License. You may obtain a
+  * copy of the License at:
+  *
+  * http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing,
+  * software distributed under the License is distributed on
+  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  * KIND, either express or implied. See the License for the
+  * specific language governing permissions and limitations
+  * under the License.
+  */
+
+/**
+ * NOTE: this file is located outside the less/ directory due to a limitation
+ * in the LESS CSS Maven Plugin's inability to traverse relative paths.
+ *
+ * Also, due to a limitation in the LESS CSS Maven Plugin, whitespace before an
+ * @import will cause a compile error.
+ */
+
+.app-launcher-portlet {
+    text-align: center;
+
+    // Shared styles between app launcher icon with text, apl launcher icon only
+    .app-launcher-item {
+        position: relative;
+
+        // This <span> has the icon as its background;  
+        .app-icon {
+            display: inline-block;
+            width: 100%; // Something wrapping the icon will bound its width
+            padding-top: 100%;
+        }
+        .app-icon-text {
+            background-color: #333;
+            opacity: 0.70;
+            padding: 12px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+
+            .app-title {
+                color: #fff;
+                font: 1.4em bold;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 3px;
+                display: block;
+            }
+            .app-subtitle {
+                height: 3em;
+                max-height: 3em;
+                color: #eee;
+                overflow: hidden;
+            }
+
+            .app-link {
+                text-decoration: none;
+
+                .app-component {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Styles for app launcher icon with text
+    .icon-and-text {
+        padding-bottom: 80px;
+
+        .app-link {
+            // Entire portlet real estate should be clickable
+            display: inline-block;
+            width: 100%;
+
+            .app-icon-wrapper {
+                // Must be an [inline-]block-level element to govern
+                // the 'padding-top: 100%' applied to .app-icon
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+}
+

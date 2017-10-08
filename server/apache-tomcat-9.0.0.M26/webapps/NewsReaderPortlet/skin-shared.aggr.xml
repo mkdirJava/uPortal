@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources xmlns="http://www.jasig.org/uportal/web/skin">
+    <js resource="true">/rs/handlebars/3.0.3/handlebars-v3.0.3.js</js>
+    <js compressed="true">scripts/q2lLa1zPLHBQzdxR923iEw.aggr.min.js</js>
+</resources>

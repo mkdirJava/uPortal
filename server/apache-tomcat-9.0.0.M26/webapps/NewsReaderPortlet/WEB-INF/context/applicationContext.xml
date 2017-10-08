@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to Apereo under one or more contributor license
+    agreements. See the NOTICE file distributed with this work
+    for additional information regarding copyright ownership.
+    Apereo licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file
+    except in compliance with the License.  You may obtain a
+    copy of the License at the following location:
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <!-- EHCache Configuration -->
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
+            p:configLocation="classpath:ehcache.xml"/>
+
+    <bean id="newsCache" 
+            class="org.springframework.cache.ehcache.EhCacheFactoryBean"
+            p:cacheManager-ref="cacheManager" p:cacheName="newsCache"/>
+
+    <util:list id="initializationServices">
+    </util:list>
+
+    <util:list id="imageTypes">
+        <value>image/jpeg</value>
+        <value>image/gif</value>
+        <value>image/png</value>
+        <value>image/jpg</value>
+    </util:list>
+
+    <util:list id="videoTypes">
+        <value>audio/x-mpeg</value>
+    </util:list>
+
+    <util:map id="antisamyPolicies">
+        <entry key="antisamy-textonly" value="classpath:/antisamy/antisamy-textonly.xml"/>
+        <entry key="antisamy-ebay" value="classpath:/antisamy/antisamy-ebay-1.1.1.xml"/>
+        <entry key="antisamy-img" value="classpath:/antisamy/antisamy-img.xml"/>
+        <entry key="antisamy-manchester" value="classpath:/antisamy/antisamy-manchester.xml"/>
+        <entry key="antisamy-anythinggoes" value="classpath:/antisamy/antisamy-anythinggoes-1.1.1.xml"/>
+    </util:map>
+
+    <!-- NEWS ADAPTER REGISTRATIONS -->
+
+    <bean id="romeProcessor"
+        class="org.jasig.portlet.newsreader.processor.RomeNewsProcessorImpl"
+        p:imageTypes-ref="imageTypes" p:videoTypes-ref="videoTypes"
+        p:policies-ref="antisamyPolicies" p:entriesPerPage="10"/>
+
+    <bean id="romeProcessorFullStory"
+          class="org.jasig.portlet.newsreader.processor.RomeNewsFullStoryProcessorImpl"
+          p:imageTypes-ref="imageTypes" p:videoTypes-ref="videoTypes"
+          p:policies-ref="antisamyPolicies" p:entriesPerPage="10"/>
+
+    <!-- RSS feed adapter -->
+    <bean id="httpClientConnectionManager" class="org.apache.http.impl.conn.PoolingClientConnectionManager"
+          p:maxTotal="200" p:defaultMaxPerRoute="20"/>
+    <bean id="httpClient" class="org.apache.http.impl.client.DefaultHttpClient"
+          c:conman-ref="httpClientConnectionManager">
+    </bean>
+
+    <bean id="org.jasig.portlet.newsreader.adapter.RomeAdapter"
+        class="org.jasig.portlet.newsreader.adapter.RomeAdapter" init-method="init"
+        p:httpClient-ref="httpClient"
+        p:processor-ref="romeProcessor" p:cache-ref="newsCache" p:cacheKeyPrefix="RomeFeed." />
+
+    <bean id="org.jasig.portlet.newsreader.adapter.RomeAdapterFullStory"
+          class="org.jasig.portlet.newsreader.adapter.RomeAdapterFullStory" init-method="init"
+          p:httpClient-ref="httpClient"
+          p:processor-ref="romeProcessorFullStory" p:cache-ref="newsCache" p:cacheKeyPrefix="RomeFeed_FS." />
+
+    <util:list id="availableAdapters">
+        <ref bean="org.jasig.portlet.newsreader.adapter.RomeAdapter"/>
+        <ref bean="org.jasig.portlet.newsreader.adapter.RomeAdapterFullStory"/>
+    </util:list>
+
+
+    <bean id="setCreationService" class="org.jasig.portlet.newsreader.service.SharedNewsSetServiceImpl">
+        <property name="newsStore" ref="newsStore"/>
+    </bean>
+
+    <!-- Message source for this context, loaded from localized "messages_xx" files -->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
+        p:basenames="messages" p:useCodeAsDefaultMessage="true"/>
+
+    <bean class="org.springframework.web.servlet.view.XmlViewResolver"
+            p:order="0" p:location="/WEB-INF/context/views.xml"/>
+
+    <!-- Default View Resolver -->
+    <bean id="viewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="cache" value="true"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- Abstract Default Exception Handler Bean -->
+    <bean id="defaultExceptionHandlerTemplate"
+        class="org.springframework.web.portlet.handler.SimpleMappingExceptionResolver"
+        abstract="true">
+        <property name="defaultErrorView" value="defError"/>
+        <property name="exceptionMappings">
+            <props>
+                <prop key="javax.portlet.PortletSecurityException">notAuthorized</prop>
+                <prop key="javax.portlet.UnavailableException">notAvailable</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="elementsProvider" class="org.jasig.resourceserver.utils.aggr.ResourcesElementsProviderImpl"/>
+
+    <bean id="pageCachingFilter" class="org.jasig.portlet.newsreader.mvc.AggregationAwareFilterBean">
+        <property name="elementsProvider" ref="elementsProvider"/>
+        <property name="filter">
+            <bean class="org.jasig.resourceserver.utils.cache.ConfigurablePageCachingFilter">
+                <constructor-arg ref="cacheManager"/>
+                <constructor-arg value="org.jasig.portal.utils.cache.ConfigurablePageCachingFilter.PAGE_CACHE"/>
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="CacheExpiresFilter" class="org.jasig.portlet.newsreader.mvc.AggregationAwareFilterBean">
+        <property name="elementsProvider" ref="elementsProvider"/>
+        <property name="filter">
+            <bean class="org.jasig.resourceserver.utils.filter.PathBasedCacheExpirationFilter">
+                <property name="cacheMaxAges">
+                    <map value-type="java.lang.Long">
+                        <entry key="/**/*.aggr.min.js" value="31536000"/>
+                        <entry key="/**/*.aggr.min.css" value="31536000"/>
+                    </map>
+                </property>
+            </bean>
+        </property>
+    </bean>
+</beans>
