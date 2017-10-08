@@ -1,0 +1,126 @@
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:21:45,829 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:21:45,872 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:21:45 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:21:45,896 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:21:46,069 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:21:46,110 - Root WebApplicationContext: initialization completed in 281 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:21:46,114 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:21:46,115 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:23:16,991 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:21:45 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:23:38,996 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:23:39,038 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:23:39 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:23:39,061 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:23:39,244 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:23:39,297 - Root WebApplicationContext: initialization completed in 300 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:23:39,301 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:23:39,301 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:29:46,045 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:23:39 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:29:59,409 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:29:59,453 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:29:59 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:29:59,476 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:29:59,648 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:29:59,691 - Root WebApplicationContext: initialization completed in 282 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:29:59,695 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:29:59,695 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:33:03,129 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:29:59 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:33:44,089 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:33:44,132 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:33:44 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:33:44,155 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:33:44,331 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:33:44,374 - Root WebApplicationContext: initialization completed in 285 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:33:44,379 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:33:44,379 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:35:07,087 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:33:44 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:35:49,594 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:35:49,637 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:35:49 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:35:49,661 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:35:49,835 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:35:49,878 - Root WebApplicationContext: initialization completed in 284 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:35:49,882 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:35:49,882 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2017-10-08 13:38:06,681 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:35:49 BST 2017]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2017-10-08 13:38:07,055 - Root WebApplicationContext: initialization started
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2017-10-08 13:38:07,105 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:38:07 BST 2017]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:38:07,131 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:38:07,675 - Loading properties file from class path resource [configuration.properties]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2017-10-08 13:38:07,727 - Root WebApplicationContext: initialization completed in 671 ms
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:38:07,731 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:38:07,731 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2017-10-08 13:39:45,117 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:38:07 BST 2017]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2017-10-08 13:39:45,623 - Root WebApplicationContext: initialization started
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2017-10-08 13:39:45,675 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:39:45 BST 2017]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:39:45,702 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:39:45,916 - Loading properties file from class path resource [configuration.properties]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2017-10-08 13:39:45,969 - Root WebApplicationContext: initialization completed in 345 ms
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:39:45,974 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:39:45,974 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:41:40,731 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:39:45 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:42:36,164 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:42:36,209 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:42:36 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:42:36,233 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:42:36,418 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:42:36,465 - Root WebApplicationContext: initialization completed in 301 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:42:36,469 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:42:36,470 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [Timer-11] portlet.DispatcherPortlet.[] 2017-10-08 13:42:56,491 - Initializing portlet 'ProxyCasTest'
+ INFO [Timer-11] portlet.DispatcherPortlet.[] 2017-10-08 13:42:56,501 - FrameworkPortlet 'ProxyCasTest': initialization started
+ INFO [Timer-11] context.XmlPortletApplicationContext.[] 2017-10-08 13:42:56,506 - Refreshing PortletApplicationContext for namespace 'ProxyCasTest-portlet': startup date [Sun Oct 08 13:42:56 BST 2017]; parent: Root WebApplicationContext
+ INFO [Timer-11] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:42:56,507 - Loading XML bean definitions from PortletContext resource [/WEB-INF/context/portlet/proxy-cas.xml]
+ INFO [Timer-11] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:42:56,585 - Loading properties file from class path resource [configuration.properties]
+ INFO [Timer-11] portlet.DispatcherPortlet.[] 2017-10-08 13:42:56,648 - FrameworkPortlet 'ProxyCasTest': initialization completed in 146 ms
+ INFO [Timer-11] portlet.DispatcherPortlet.[] 2017-10-08 13:42:56,648 - Portlet 'ProxyCasTest' configured successfully
+ INFO [main] context.XmlPortletApplicationContext.[] 2017-10-08 13:46:45,349 - Closing PortletApplicationContext for namespace 'ProxyCasTest-portlet': startup date [Sun Oct 08 13:42:56 BST 2017]; parent: Root WebApplicationContext
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:46:45,350 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:42:36 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:50:15,515 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 13:50:15,562 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 13:50:15 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 13:50:15,588 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 13:50:15,770 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 13:50:15,815 - Root WebApplicationContext: initialization completed in 299 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:50:15,819 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 13:50:15,819 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2017-10-08 14:02:53,656 - Closing Root WebApplicationContext: startup date [Sun Oct 08 13:50:15 BST 2017]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2017-10-08 14:02:54,060 - Root WebApplicationContext: initialization started
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] support.XmlWebApplicationContext.[] 2017-10-08 14:02:54,113 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 14:02:54 BST 2017]; root of context hierarchy
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] xml.XmlBeanDefinitionReader.[] 2017-10-08 14:02:54,142 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] config.PropertyPlaceholderConfigurer.[] 2017-10-08 14:02:54,719 - Loading properties file from class path resource [configuration.properties]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] context.ContextLoader.[] 2017-10-08 14:02:54,773 - Root WebApplicationContext: initialization completed in 712 ms
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.HttpServletRequestWrapperFilter.[] 2017-10-08 14:02:54,778 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] util.HttpServletRequestWrapperFilter.[] 2017-10-08 14:02:54,778 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] context.ContextLoader.[] 2017-10-08 14:04:25,822 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 14:04:25,866 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 14:04:25 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 14:04:25,889 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 14:04:26,063 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 14:04:26,105 - Root WebApplicationContext: initialization completed in 283 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 14:04:26,109 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 14:04:26,109 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 14:05:01,943 - Closing Root WebApplicationContext: startup date [Sun Oct 08 14:04:25 BST 2017]; root of context hierarchy
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 15:36:36,992 - Closing Root WebApplicationContext: startup date [Sun Oct 08 14:02:54 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 15:39:53,986 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 15:39:54,031 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 15:39:54 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 15:39:54,053 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 15:39:54,231 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 15:39:54,274 - Root WebApplicationContext: initialization completed in 287 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 15:39:54,278 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 15:39:54,278 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 15:43:07,747 - Closing Root WebApplicationContext: startup date [Sun Oct 08 15:39:54 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 15:44:10,144 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 15:44:10,187 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 15:44:10 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 15:44:10,210 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 15:44:10,404 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 15:44:10,448 - Root WebApplicationContext: initialization completed in 304 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 15:44:10,452 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 15:44:10,452 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 15:46:28,084 - Closing Root WebApplicationContext: startup date [Sun Oct 08 15:44:10 BST 2017]; root of context hierarchy
+ INFO [main] context.ContextLoader.[] 2017-10-08 15:54:19,514 - Root WebApplicationContext: initialization started
+ INFO [main] support.XmlWebApplicationContext.[] 2017-10-08 15:54:19,559 - Refreshing Root WebApplicationContext: startup date [Sun Oct 08 15:54:19 BST 2017]; root of context hierarchy
+ INFO [main] xml.XmlBeanDefinitionReader.[] 2017-10-08 15:54:19,582 - Loading XML bean definitions from ServletContext resource [/WEB-INF/context/applicationContext.xml]
+ INFO [main] config.PropertyPlaceholderConfigurer.[] 2017-10-08 15:54:19,761 - Loading properties file from class path resource [configuration.properties]
+ INFO [main] context.ContextLoader.[] 2017-10-08 15:54:19,803 - Root WebApplicationContext: initialization completed in 289 ms
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 15:54:19,807 - Property [roleAttribute] not found.  Using default value [null]
+ INFO [main] util.HttpServletRequestWrapperFilter.[] 2017-10-08 15:54:19,808 - Property [ignoreCase] not found.  Using default value [false]
+ INFO [Timer-7] portlet.DispatcherPortlet.[] 2017-10-08 15:54:39,831 - Initializing portlet 'ProxyCasTest'
+ INFO [Timer-7] portlet.DispatcherPortlet.[] 2017-10-08 15:54:39,840 - FrameworkPortlet 'ProxyCasTest': initialization started
+ INFO [Timer-7] context.XmlPortletApplicationContext.[] 2017-10-08 15:54:39,847 - Refreshing PortletApplicationContext for namespace 'ProxyCasTest-portlet': startup date [Sun Oct 08 15:54:39 BST 2017]; parent: Root WebApplicationContext
+ INFO [Timer-7] xml.XmlBeanDefinitionReader.[] 2017-10-08 15:54:39,849 - Loading XML bean definitions from PortletContext resource [/WEB-INF/context/portlet/proxy-cas.xml]
+ INFO [Timer-7] config.PropertyPlaceholderConfigurer.[] 2017-10-08 15:54:40,168 - Loading properties file from class path resource [configuration.properties]
+ INFO [Timer-7] portlet.DispatcherPortlet.[] 2017-10-08 15:54:40,218 - FrameworkPortlet 'ProxyCasTest': initialization completed in 377 ms
+ INFO [Timer-7] portlet.DispatcherPortlet.[] 2017-10-08 15:54:40,218 - Portlet 'ProxyCasTest' configured successfully
