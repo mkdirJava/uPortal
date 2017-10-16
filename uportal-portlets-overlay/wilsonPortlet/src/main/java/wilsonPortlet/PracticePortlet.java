@@ -14,6 +14,8 @@ import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
+
+//import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.portlet.ModelAndView;
@@ -25,9 +27,12 @@ import org.springframework.web.portlet.bind.annotation.ResourceMapping;
 @RequestMapping("VIEW")
 public class PracticePortlet {
 
+//	private final static Logger logger = Logger.getLogger(PracticePortlet.class);
+	
 	@RenderMapping
 	protected ModelAndView doView(RenderRequest request, RenderResponse response) throws IOException, PortletException {
 
+//		logger.debug("I am in the View");
 		response.setContentType("text/html");
 
 		// Get preferences & session
@@ -42,11 +47,13 @@ public class PracticePortlet {
 
 	@ActionMapping
 	public void processAction(ActionRequest request, ActionResponse response) throws IOException, PortletException {
+//		logger.debug("I am in the ACTION");
 		System.out.println("Hi There in the process action");
 	}
 
 	@ResourceMapping
 	public void serveResource(ResourceRequest request, ResourceResponse response) throws PortletException, IOException {
+//		logger.debug("I am in the RESOURCE");
 		System.out.println("hi there in the Server Resource");
 	}
 

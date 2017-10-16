@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+
+	<display-name>wilsonPortlet</display-name>
+
+<!--  WL: One of the ways to start up Spring -->
+	<!-- <context-param> -->
+	<!-- <param-name>contextConfigLocation</param-name> -->
+	<!-- <param-value>classpath:applicationContext.xml</param-value> -->
+	<!-- </context-param> -->
+
+	<!-- <listener> -->
+	<!-- <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> -->
+	<!-- </listener> -->
+
+	<!-- <listener> -->
+	<!-- <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class> -->
+	<!-- </listener> -->
+
+	<servlet>
+		<servlet-name>ViewRendererServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.ViewRendererServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+<servlet>
+<servlet-name>wilsonPortlet</servlet-name>
+<servlet-class>org.apache.pluto.container.driver.PortletServlet</servlet-class>
+<init-param>
+<param-name>portlet-name</param-name>
+<param-value>wilsonPortlet</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>ViewRendererServlet</servlet-name>
+		<url-pattern>/WEB-INF/servlet/view</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+<servlet-name>wilsonPortlet</servlet-name>
+<url-pattern>/PlutoInvoker/wilsonPortlet</url-pattern>
+</servlet-mapping>
+
+
+	<!-- Pluto elements required in uportal 4 -->
+	<!-- WL: The Ant Script injects this when deploying to the Tomcat : -->
+	<!-- ant deployPortletApp -DportletApp=<path to server> -->
+	<!-- { -->
+
+		<!-- <servlet> -->
+		<!-- <servlet-name>wilsonPortlet</servlet-name> -->
+		<!-- <servlet-class>org.apache.pluto.container.driver.PortletServlet</servlet-class> -->
+		<!-- <init-param> -->
+		<!-- <param-name>portlet-name</param-name> -->
+		<!-- <param-value>wilsonPortlet</param-value> -->
+		<!-- </init-param> -->
+		<!-- <load-on-startup>1</load-on-startup> -->
+		<!-- </servlet> -->
+	
+		<!-- <servlet-mapping> -->
+		<!-- <servlet-name>wilsonPortlet</servlet-name> -->
+		<!-- <url-pattern>/PlutoInvoker/wilson</url-pattern> -->
+		<!-- </servlet-mapping> -->
+	
+	<!-- } -->
+
+</web-app>

@@ -1,4 +1,0 @@
-WARN  [uP-TaskExec-1-aggregateRawEvents] o.j.p.e.a.PortalRawEventsAggregatorImpl 2017-10-08 15:57:30,699 - Aborting raw event aggregation, populateDimensions returned false so the state of date/time dimensions is unknown
-WARN  [uP-TaskExec-1-aggregateRawEvents] o.j.p.e.a.PortalEventProcessingManagerImpl 2017-10-08 15:57:30,710 - doAggregateRawEvents did not execute
-INFO  [uP-TaskExec-1-purgeRawEvents] o.j.p.e.a.PortalEventProcessingManagerImpl 2017-10-08 15:57:31,278 - Purged 0 events created at null events/second between 66 and 0.0000 in {}ms - {} e/s a {}x speedup
-INFO  [uP-TaskExec-1-purgeEventSessions] o.j.p.e.a.PortalEventProcessingManagerImpl 2017-10-08 15:57:31,652 - Purged 0 event sessions created before null in 43ms - 0.0000 sessions/second
