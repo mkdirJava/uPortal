@@ -18,4 +18,8 @@ uportal-platform-api/target/
 **/node_modules/
 npm-debug.log
 **/.DS_Store
+/server/apache-tomcat-9.0.0.M26/logs
+/server/apache-tomcat-9.0.0.M26/temp
+/server/apache-tomcat-9.0.0.M26/webapps
+/server/apache-tomcat-9.0.0.M26/work
 
